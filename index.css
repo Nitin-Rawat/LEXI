@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: linear-gradient(to right, rgb(245, 249, 230) 0%, rgb(112, 112, 203) 50%, rgb(172, 34, 108) 60%, rgb(172, 34, 108) 100%);
+    color: black;
+}
+
+
+
+#lexi {
+    margin-left: 20%;
+    font-size: 50px;
+    position: relative;
+    font-style: normal;
+    
+}
+
+#lexi span {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#lexi span::before {
+    color: #1877f2;
+    content: attr(data-full-form);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-40%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#lexi span:hover::before {
+    opacity: 1;
+    left: 110%;
+}
+
+
+img {
+    
+    max-width: 400px;
+    border-radius: 10%;
+} 
+
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: translateX(-50%);
+    top: 0;
+    left: 50%;
+    
+}
+
+
+.tilt-container {
+    width: 0;
+    height: 0;
+    
+}
+
+.tilt-element {
+    transition: transform .3s ease;
+    transform-origin: top left;
+    
+}
+
+.tilt-container:hover .tilt-element {
+    transform: rotate(8deg);
+    
+} 
+
+.robotimg {
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 450px;
+
+}
+
+.robotimg >img {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+
+.robotimg img:hover {
+    width: 70px;
+    height: 70px;
+    border-radius: 40%;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+input[type="button"] {
+    background: linear-gradient(to right, rgb(245, 249, 230) 0%, rgb(112, 112, 203) 50%, rgb(172, 34, 108) 60%, rgb(172, 34, 108) 100%);
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.start-btn {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    margin: 0;
+    padding: 10px ;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(245, 249, 230) 0%, rgb(112, 112, 203) 50%, rgb(172, 34, 108) 60%, rgb(172, 34, 108) 100%); 
+    color: black; 
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.start-btn::after{
+    transform: scale(2) ;
+    background-color: aqua;
+}
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER SECTION START ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(172, 34, 108) 60%, rgb(172, 34, 108) 100%, rgb(245, 249, 230) 0%, rgb(112, 112, 203) 50%,);
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for transform and background-color */
+}
+
+footer:hover {
+    transform:translateY(-10px); /*  Move the button up slightly on hover */
+
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MEDIA START ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 500px) {
+    body{
+        background-attachment: fixed;
+        position: absolute;
+    }
+
+    img {
+      max-width:150px;
+      
+    }
+    .start-btn {
+     left: 7%;
+    }
+    .container {
+    margin-top: 30%;
+        
+    }
+    .tilt-container {
+        
+       /* margin-top: 50%; */
+        width: 0;
+        height: 0;
+        
+    }
+
+    .robotimg {
+   
+      display: flex;
+      justify-content: center;
+      margin-top: 300px;
+    }
+  
+    .robotimg > img {
+      width: 70px;
+      height: 70px;
+     
+    }
+  
+    .robotimg img:hover {
+      width: 50px;
+      height: 50px;
+    }
+ 
+    input[type="button"] {
+      padding: 10px 10px;
+      font-size: 10px;
+      position: static;
+      
+    }
+    
+
+  }
+  

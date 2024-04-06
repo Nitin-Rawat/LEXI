@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background: url("IMG's/Backgroun__2___.jpg") ; */
+  background: linear-gradient(to right, rgb(245, 249, 230) 0%, rgb(112, 112, 203) 50%, rgb(172, 34, 108) 60%, rgb(172, 34, 108) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  overflow: hidden;
+
+}
+
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: static;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.icon {
+  display: none;
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++ Chat section start here ++++++++++++++++++++++++++++++++++*/
+
+
+.chat-box {
+  width: 800px;
+  height: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.chat-container {
+  height: 450px;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.sent-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  overflow-wrap: break-word;
+}
+
+.received-message {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+}
+
+#message-input {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 8px;
+  overflow-wrap: break-word;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  /* background-color: #4CAF50; */
+  background: linear-gradient(to right, rgb(245, 249, 230) 0%, rgb(112, 112, 203) 50%, rgb(172, 34, 108) 60%, rgb(172, 34, 108) 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++ @media Section Start +++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width: 500px) {
+  body{
+    position: fixed;
+  }
+
+  .chat-box {
+    width: 350px;
+    height: 500px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .chat-container {
+    height: 400px;
+    width: 300px;
+    overflow-y: scroll;
+
+  
+    padding: 10px;
+  }
+
+
+  #message-input {
+   
+    width: 300px;
+    height: auto;
+    padding: 8px;
+  }
+
+ 
+
+}
+
+
+
+
+
+  
+
