@@ -33,5 +33,7 @@ document.getElementById("message-input").addEventListener("keypress", function(e
     event.preventDefault(); // Prevent the default behavior of the Enter key (submitting the form)
     sendMessage(); // Call the sendMessage function
   }
+  
 });
+
 
