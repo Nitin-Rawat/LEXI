@@ -102,9 +102,6 @@ button {
 /* +++++++++++++++++++++++++++++++++++ @media Section Start +++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width: 500px) {
-  body{
-    position: fixed;
-  }
 
   .chat-box {
     width: 350px;
